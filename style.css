@@ -1,0 +1,66 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600;700&display=swap');
+
+/* google font */
+
+
+
+
+/* common style */
+body {
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+main {
+    width: 1200px;
+    margin: 3rem auto;
+}
+
+.btn {
+    background-color: green;
+    border: none;
+    padding: .8rem 1.5rem;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 7px;
+}
+
+/* common style ends */
+
+/* header section starts --------------*/
+.header-section {
+    display: flex;
+    background-color: #161616;
+    padding: 4rem;
+    border-radius: 10px;
+    background-image: url(images/player.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.header-text {
+    width: 50%;
+    padding-top: 5rem;
+}
+
+
+.header-text h1 {
+    color: #fff;
+    font-size: 3.4em;
+    width: 70%;
+    margin: 0;
+}
+
+.header-text p {
+    color: #fff;
+    margin: 0;
+    padding-bottom: 1rem;
+    width: 70%;
+}
+
+
+
+
+/* header section ends --------------------*/

@@ -238,6 +238,10 @@ footer {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
+.footer-icon {
+    padding: 2rem;
+}
+
 .social-icon {
     width: 40px;
     height: 28px;
@@ -275,7 +279,7 @@ footer {
 
 @media only screen and (min-width: 689px) and (max-width: 992px) {
     main {
-        width: 550px;
+        width: 650px;
         margin: 3rem auto;
     }
 
@@ -288,6 +292,7 @@ footer {
 
     .header-text {
         width: 100%;
+        padding-top: 0;
     }
 
 
@@ -300,9 +305,14 @@ footer {
         display: block !important;
     }
 
-
-    .p-banner-one {
-        display: none;
+    .header-text p {
+        color: #fff;
+        margin: 0;
+        padding-bottom: 1rem;
+        width: 50%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
     .match-schedule {
@@ -365,13 +375,12 @@ p.p-banner {
 
     .header-section {
         padding: 2rem 4rem;
-        background-image: none;
         flex-direction: column;
         display: flex;
         background-color: #161616;
         background-image: url(images/player.png);
         background-repeat: no-repeat;
-        background-size: 70%;
+        background-size: 60%;
         background-position: bottom;
     }
 
@@ -399,14 +408,13 @@ p.p-banner {
     .header-text p {
         width: 100%;
         font-size: 13px;
-    }
-
-    p.p-banner {
-        display: block !important;
-    }
-
-    .p-banner-one {
-        display: none;
+        color: #fff;
+        margin: 0;
+        padding-bottom: 1rem;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
     .matches {
@@ -443,6 +451,7 @@ p.p-banner {
         flex-direction: column;
         text-align: center;
     }
+
 
 }
 

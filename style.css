@@ -41,6 +41,10 @@ main {
     background-position: right;
 }
 
+.header-img {
+    display: none;
+}
+
 .header-text {
     width: 50%;
     padding-top: 5rem;
@@ -180,6 +184,14 @@ main {
     width: 100%;
 }
 
+.button-bottom {
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+
+
 /* blog section ends ======================*/
 
 /* match section ends---------------------------- */
@@ -215,4 +227,184 @@ footer {
 .footer-menu ul li a {
     color: #ffffffb0;
     text-decoration: none;
+}
+
+/* footer end */
+
+
+
+
+/* =================media queries */
+
+/* mobile devices -=-=-=-=-=-=-=-==-=-=-==--=--=*/
+
+@media only screen and (max-width: 688px) {
+    main {
+        width: 90%;
+        margin: 3rem auto;
+    }
+
+    .header-section {
+        padding: 1rem;
+    }
+}
+
+/* mobile devices end------------------------------- */
+
+/* tablet devices */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    main {
+        width: 650px;
+        margin: 3rem auto;
+    }
+
+    .header-section {
+        padding: 3rem;
+        background-size: contain;
+    }
+
+
+
+    .header-text {
+        width: 100%;
+    }
+
+
+    .header-text h1 {
+        font-size: 2em;
+        width: 50%;
+    }
+
+    p.p-banner {
+        display: block !important;
+    }
+
+
+    .p-banner-one {
+        display: none;
+    }
+
+    .match-schedule {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .matches {
+        flex-direction: column;
+
+    }
+
+    .match-menu {
+        width: 100%;
+        background-color: #fff;
+        flex-direction: row;
+        border-radius: 10px;
+        padding: 10px;
+        height: 5vh;
+
+    }
+
+    .button-bottom {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .match-menu a {
+        border: 1px solid rgba(151, 150, 150, 0.26);
+        padding: 10px 20px;
+        color: #000;
+        background-color: #fff;
+    }
+
+
+}
+
+p.p-banner {
+    display: none;
+}
+
+/* tablet devices end */
+/* =================media queries */
+@media only screen and (max-width: 688px) {
+    main {
+        width: 90%;
+        margin: 3rem auto;
+    }
+
+    .header-section {
+        padding: 2rem 4rem;
+        background-image: none;
+        flex-direction: column;
+        display: flex;
+        background-color: #161616;
+        background-image: url(images/player.png);
+        background-repeat: no-repeat;
+        background-size: 70%;
+        background-position: bottom;
+    }
+
+    .header-img {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        height: 30vh;
+
+    }
+
+
+    .header-text {
+        width: 100%;
+        padding-top: 0rem;
+        text-align: center;
+    }
+
+    .header-text h1 {
+        font-size: 1.5em;
+        width: 70%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .header-text p {
+        width: 100%;
+    }
+
+    p.p-banner {
+        display: block !important;
+    }
+
+    .p-banner-one {
+        display: none;
+    }
+
+    .matches {
+        flex-direction: column;
+    }
+
+    .match-menu {
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 10px;
+        height: 20vh;
+
+    }
+
+    .match-menu a {
+        border: 1px solid rgba(151, 150, 150, 0.26);
+        padding: 10px 20px;
+        color: #000;
+        background-color: #fff;
+    }
+
+    .match-schedule {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .match-team {
+        justify-content: center;
+    }
 }

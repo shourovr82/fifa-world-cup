@@ -311,7 +311,7 @@ footer {
         padding-bottom: 1rem;
         width: 50%;
         overflow: hidden;
-        white-space: nowrap;
+
         text-overflow: ellipsis;
     }
 

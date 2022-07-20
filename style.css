@@ -25,6 +25,14 @@ main {
     font-weight: 600;
     color: #fff;
     border-radius: 7px;
+    transition: .5s;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.btn:hover {
+    background-color: #000;
+    cursor: pointer;
+    border: 1px groove rgba(255, 255, 255, 0.308);
 }
 
 /* common style ends */
@@ -230,6 +238,28 @@ footer {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
+.social-icon {
+    width: 40px;
+    height: 28px;
+    color: #000;
+    background-color: #FFF;
+    border: 1px solid #000;
+    padding-top: 12px;
+    border-radius: 22px;
+    -moz-border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -o-border-radius: 22px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.social-icon:hover {
+    color: #ffffff;
+    background-color: #000;
+    border: 1px solid rgba(136, 128, 128, 0.295);
+    cursor: pointer;
+}
+
 
 
 /* footer end */
@@ -239,11 +269,7 @@ footer {
 
 /* =================media queries */
 
-/* mobile devices -=-=-=-=-=-=-=-==-=-=-==--=--=*/
 
-
-
-/* mobile devices end------------------------------- */
 
 /* tablet devices */
 
@@ -327,7 +353,10 @@ p.p-banner {
 }
 
 /* tablet devices end */
-/* =================media queries */
+
+
+/* mobile devices -=-=-=-=-=-=-=-==-=-=-==--=--=*/
+
 @media only screen and (max-width: 688px) {
     main {
         width: 90%;
@@ -351,7 +380,6 @@ p.p-banner {
         width: 100%;
         align-items: center;
         height: 30vh;
-
     }
 
 
@@ -417,3 +445,8 @@ p.p-banner {
     }
 
 }
+
+/* mobile devices end------------------------------- */
+
+
+/* =================media queries */

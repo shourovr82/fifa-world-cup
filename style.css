@@ -255,7 +255,7 @@ footer {
 
 @media only screen and (min-width: 689px) and (max-width: 992px) {
     main {
-        width: 650px;
+        width: 550px;
         margin: 3rem auto;
     }
 
@@ -316,6 +316,14 @@ footer {
         padding: 10px 20px;
         color: #000;
         background-color: #fff;
+        font-size: 17px;
+    }
+
+    .footer-menu ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        justify-items: center;
     }
 
 
@@ -406,5 +414,12 @@ p.p-banner {
 
     .match-team {
         justify-content: center;
+    }
+
+    .footer-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 }
